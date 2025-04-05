@@ -52,7 +52,7 @@ To explore how existing Linux ELF binaries can be run on Unikraft unikernels wit
 
 ---
 
-## 🔧 Tools & Environment
+## Tools & Environment
 
 - **Unikraft:** v0.18 (Helene)
 - **KraftKit CLI**
