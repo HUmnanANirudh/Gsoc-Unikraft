@@ -31,15 +31,6 @@ To explore how existing Linux ELF binaries can be run on Unikraft unikernels wit
     - Config file (redis.conf)
 - Warnings shown for background jobs and fork attempts, but server runs and listens on the correct port.
 
-### curl
-- Attempted to run using `curlimages/curl` base image
-- Encountered runtime errors and unresolved dependencies
-- Logged build-time errors and stack traces
-
-### htop
-- Similar issues as curl, including missing runtime and library linkage
-- Recorded logs for debugging and future improvements
-
 ---
 
 ## Key Learnings
@@ -48,7 +39,6 @@ To explore how existing Linux ELF binaries can be run on Unikraft unikernels wit
 - Missing symbols trigger `weak main()` fallback in Unikraft
 - Dynamic binaries must copy all required shared libraries + linkers
 - Dockerfiles + `Kraftfile` combo work well for app-level rootfs
-- Trial and error is essential; lots of low-level debugging involved
 
 ---
 
