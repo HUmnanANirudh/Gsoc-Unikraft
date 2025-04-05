@@ -1,0 +1,14 @@
+spec: v0.6
+
+name: curl-unikraft
+
+unikraft:
+  version: stable
+
+targets:
+  - architecture: x86_64
+    platform: qemu
+    target: curl-unikraft_qemu-x86_64
+
+rootfs: ./rootfs
+cmd: ["/init"]

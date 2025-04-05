@@ -1,0 +1,16 @@
+spec: '0.6'
+
+unikraft:
+  version: stable
+  kconfigs:
+    - CONFIG_LIBUKLIBC=y
+    - CONFIG_LIBUKLIBC_SYSCALLS=y
+    - CONFIG_LIBSYSCALL_SHIM=y
+    - CONFIG_LIBAPP_BINMAN=y
+    - CONFIG_BINCOMPAT=y
+
+targets:
+  - architecture: x86_64
+    platform: qemu
+
+binary: hello

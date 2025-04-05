@@ -1,0 +1,17 @@
+spec: '0.6'
+unikraft:
+  version: stable
+  kconfigs:
+    - CONFIG_LIBUK_BINPRM_ELF_LOADER=y
+    - CONFIG_LIBUKLIBC=y
+    - CONFIG_LIBUKLIBC_FDIO=y
+    - CONFIG_LIBUKLIBC_SYSCALLS=y
+    - CONFIG_LIBSYSCALL_SHIM=y
+    - CONFIG_LIBUKARGPARSE=y
+    - CONFIG_BINCOMPAT=y
+    - CONFIG_LIBPOSIX_LIBDL=y
+    - CONFIG_LIBCXXABI=y
+binary: redis-server
+targets:
+  - architecture: x86_64
+    platform: qemu
