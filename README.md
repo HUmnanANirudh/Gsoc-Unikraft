@@ -16,7 +16,40 @@ To explore how existing Linux ELF binaries can be run on Unikraft unikernels wit
 - Observing runtime behavior, library linking, and syscall issues
 
 ---
+## Base Repository
+I started by cloning the official Unikraft app catalog repository:
 
+```bash
+git clone https://github.com/unikraft/catalog.git
+```
+
+## Folder Structure
+
+### `README.md`
+The main readme file that explains the catalog purpose, setup instructions, and links to various examples and libraries.
+
+### `examples/`
+Sample applications in various languages showing how to build with Unikraft.
+
+### `library/`
+Pre-built and supported application packages and middleware. Each folder here contains a specific version of a software or runtime.
+
+### `native/`
+Used for native Linux testing environments or utilities needed by the build system. Sometimes contains helper tools or stubs.
+
+### `rootfs/`
+Root filesystem support for apps needing external dependencies.
+
+### `tests/`
+This folder contains deeper testing infrastructure for Unikraft:
+
+##### `os-demo/`
+A **treasure trove of low-level OS-level demos and test cases** that simulate real OS functionality or demonstrate Unikraft features
+
+##### `synthetic/`
+Synthetic and microbenchmark tests
+
+---
 ## What Works (and What Didn’t)
 
 ### Hello World (C & CPP)
