@@ -75,3 +75,14 @@ This folder contains my experiments attempting to run two widely used Linux util
 
 ---
 
+## Screenshots
+- Curl 
+
+![Screenshot 2025-04-06 053101](https://github.com/user-attachments/assets/5c18d787-380b-4876-9b14-fcd2b9910d64)
+
+- Htop
+
+![Screenshot 2025-04-06 053116](https://github.com/user-attachments/assets/060bd0b9-cdd2-4b52-8033-30a4a59a7e2d)
+
+
+
